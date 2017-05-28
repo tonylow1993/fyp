@@ -10,7 +10,7 @@ require ROOT . '/' . API_VERSION . '/MysqliDB.php';
 require ROOT . '/' . API_VERSION . '/User.php';
 require ROOT . '/' . API_VERSION . '/GlobalFunction.php';
 
-$db = new MysqliDb('localhost', 'kit', 'kit1234', 'fyp');
+$db = new MysqliDb('localhost', 'tonylow', 'pl12ok34', 'fyp-codetogether');
 $router = new AltoRouter();
 $router->setBasePath("/apiv2.1");
 

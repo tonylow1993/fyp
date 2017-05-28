@@ -71,7 +71,7 @@ if($match && is_callable( $match['target'] ) ) {
 	require_once ROOT . '/' . API_VERSION . '/User.php';	
 	
 	$user = new User();
-	$db = new MysqliDb('localhost', 'kit', 'kit1234', 'fyp');
+	$db = new MysqliDb('localhost', 'tonylow', 'pl12ok34', 'fyp-codetogether');
 	
 	list($class_name, $method) = explode('::', $match['target']);	
 		

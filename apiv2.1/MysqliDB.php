@@ -113,7 +113,7 @@ class MysqliDb
         $this->password = $password;
         $this->db = $db;
         if($port == NULL)
-            $this->port = ini_get ('mysqli.default_port');
+            $this->port = 3306;
         else
             $this->port = $port;
 

@@ -3,8 +3,8 @@ var testcases = [];
 function getPassFailData(testcase_id){
 	$.ajax({  
 		type : "post",  
-		url : "/apiv2/get-overall-data.php",  
-		data : "testcase_id=" + testcase_id + "&assignment_id=" + assignment_id,  
+		url : "/apiv2.1/bk/get-overall-data.php",  
+		data : "testcase_id=1" + "&assignment_id=1",  
 		async : false,  
 		success : function(res){
 			var overallData = $.parseJSON(res);

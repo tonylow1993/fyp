@@ -224,7 +224,7 @@ class Assignment{
 	        $result['editor'] = Assignment::getEditor($result['group_id']);	        	        	        
         }elseif(user::isTeacher() ){
 	        $db->where("assignment_id", $assignment_id);
-	        $result2 = $db->get("assignment_group", "COUNT(*) as group_count")[0];						
+	        $result2 = $db->get("assignment_group", "COUNT(*) as group_count")[0];					
 			
 			$result['group_count'] = $result2['group_count'];
 			$deadline = explode(" ", $result['deadline']);
@@ -246,7 +246,7 @@ class Assignment{
 			$result['overdue'] = false;
 			$diff = $result['deadline_time'] - time();
 			$result['deadline_day'] = ceil($diff / 60 / 60 / 24);			
- 		}			
+ 		}
 
         return $result;
 	}    

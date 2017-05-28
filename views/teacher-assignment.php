@@ -80,7 +80,7 @@ $course = $courseAPI->info();
 			                        foreach($assignment['files'] as $file):
 			                            if(in_array($file['extension'], file::$viewerJSSupportedExtension  )):
 			                        ?>
-			                            <iframe class="pdf" id="viewer" src ="/js/viewerJS/#../../../files/questions/<?= $file['filepath'] ?>" width='' height='' allowfullscreen webkitallowfullscreen frameBorder="0"></iframe>
+			                            <iframe class="pdf" id="viewer" src ="/js/viewerJS/index.html#../../../files/questions/<?= $file['filepath'] ?>" width='' height='' allowfullscreen webkitallowfullscreen frameBorder="0"></iframe>
 			                        <?php
 			                            endif;
 			                        endforeach;

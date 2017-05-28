@@ -3,9 +3,10 @@ var testcaseData;
 
 function init_plots()
 {
+	console.log(group_id);
 	$.ajax({  
 		type : "post",  
-		url : "/apiv2/get-collaboration-data.php",  
+		url : "/apiv2.1/bk/get-collaboration-data.php",  
 		data : "group_id=" + group_id,  
 		async : false,  
 		success : function(res){
@@ -14,7 +15,7 @@ function init_plots()
 	}); 
 	$.ajax({  
 		type : "post",  
-		url : "/apiv2/get-testcase-data.php",  
+		url : "/apiv2.1/bk/get-testcase-data.php",  
 		data : "group_id=" + group_id,  
 		async : false,  
 		success : function(res){

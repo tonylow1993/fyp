@@ -6,10 +6,10 @@
 *
 **/
 class mysql{
-    private $dbuser = "kit";
-    private $dbpassword = "kit1234";
+    private $dbuser = "tonylow";
+    private $dbpassword = "pl12ok34";
     private $dbhost = "localhost";    
-    private $dbname = "fyp";
+    private $dbname = "fyp-codetogether";
     private $db;
     
     public function __construct(){

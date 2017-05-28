@@ -104,7 +104,7 @@ li.tab-li:hover i.delete-tab{
 		                    if(in_array($file['extension'], file::$viewerJSSupportedExtension  )):
 		                ?>
 							
-		                    <iframe id="viewer" src ="<?= $template['template_url'] ?>/js/viewerJS/#../../../files/questions/<?= $file['filepath'] ?>" width='' height='' allowfullscreen webkitallowfullscreen frameBorder="0"></iframe>
+		                    <iframe id="viewer" src ="<?= $template['template_url'] ?>/js/viewerJS/index.html#../../../files/questions/<?= $file['filepath'] ?>" width='' height='' allowfullscreen webkitallowfullscreen frameBorder="0"></iframe>
 						
 		                <?php
 		                    endif;

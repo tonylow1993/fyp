@@ -8,7 +8,7 @@ Tino's
 require("/var/www/html2/apiv2.1/MysqliDB.php");
 require("/var/www/html2/apiv2.1/Java.php");
 define("ROOT", dirname(__DIR__));
-$db = new MysqliDb('localhost', 'kit', 'kit1234', 'fyp');
+$db = new MysqliDb('localhost', 'tonylow', 'pl12ok34', 'fyp-codetogether');
 $javaAPI = new Java();
 ob_start();
 $javaAPI->compileAndRun($assignment_id,$input);
